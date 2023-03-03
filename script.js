@@ -17,3 +17,26 @@ window.onscroll = function(){
     mainPosition = currentOffSe;
 };
 
+
+
+const welcomeButton = document.querySelectorAll(".welcome-button");
+const winds = document.querySelectorAll(".wind");
+const f18 = document.querySelector(".f18-svg")
+
+welcomeButton.forEach(button=>{
+
+    button.addEventListener("mouseover",()=>{
+        f18.style.marginRight = `1em`
+        winds.forEach(wind=>{
+            wind.style.animationDuration = `500ms`
+        })   
+    })
+
+    button.addEventListener("mouseleave",()=>{
+        f18.style.marginRight = 0
+        winds.forEach(wind=>{
+            wind.style.animationDuration = `1s`
+        })
+    })
+})
+
