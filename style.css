@@ -20,7 +20,7 @@ body{
 
 
 header{
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
@@ -30,10 +30,15 @@ header{
     padding: 10px 10px;
     box-shadow: 0 0 10px #00000085;
     z-index: 10000;
+    border-bottom: 2px solid rgb(103, 230, 135);
 }
 
 .logo-container{
     width: 50%;
+}
+
+.header-logo{
+    width: 50px;
 }
 
 nav{
@@ -57,6 +62,7 @@ nav{
 
 
 .welcome{
+    margin: auto;
     background: radial-gradient(#171717, rgb(0, 0, 0) 200%);
     display: flex;
     overflow: hidden;
@@ -65,7 +71,7 @@ nav{
 
 .separator{
     width: 40%;
-    height: 70vh;
+    height: 100vh;
     background: linear-gradient(rgb(83, 192, 110),rgb(42, 119, 61));
     display: flex;
     clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
@@ -73,18 +79,34 @@ nav{
 
 .container-img1{
     width: 10%;
-    height: 70vh;
+    left: -15%;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    position: absolute;
-    left: 25%;
+    position: relative;
+    scale: 1.3;
 }
 
 .f18-svg{
     max-width: 400px;
-    filter: drop-shadow(-10px 10px 5px #0000006b);
+    filter: drop-shadow(-10px 30px 5px #0000006b);
+    animation-name: f18-hovering;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes f18-hovering {
+    0%{
+        
+    }
+    50%{
+        transform: translate(0, -5px);
+        filter: drop-shadow(-10px 35px 5px #0000006b);
+    }
+    100%{
+
+    }
+}
 
 
 
@@ -97,7 +119,7 @@ nav{
 
 
 .welcome-text-container{
-    left: 15%;
+    left: 5%;
     width: 40%;
     max-width: 200px;
     height: fit-content;
@@ -106,6 +128,7 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    scale: 1.3;
 }
 
 .welcome-text-container p{
@@ -135,4 +158,65 @@ h1{
 .welcome-button-container{
     display: flex;
     justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+
+    .container-img1{
+        scale: 1.1;
+    }
+    
+    .welcome-text-container{
+        scale: 1.1;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .container-img1{
+        scale: 1;
+    }
+    
+    .welcome-text-container{
+        scale: 1;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .container-img1{
+        scale: 0.8;
+    }
+    
+    .welcome-text-container{
+        scale: 0.8;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .welcome{
+        display: none;
+    }
+
 }
