@@ -40,3 +40,21 @@ welcomeButton.forEach(button=>{
     })
 })
 
+// ABRIR CERRAR AYUDA //
+
+let helpOpen = 0;
+
+openHelp = () =>{
+
+    const HelpContainer = document.querySelector(".help");
+
+    if(helpOpen == 0){
+        HelpContainer.style.transform = `translate(0)`
+        helpOpen = 1
+    }
+    else{
+        HelpContainer.style.transform = `translate(-94.5%)`
+        helpOpen = 0
+    }
+}
+

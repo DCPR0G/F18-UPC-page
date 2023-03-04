@@ -5,9 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- LINKS A GOOGLE FONTS  PARA LA CALCULADORA -->
 
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+       
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarpanch&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <!-- - - - - - - - - - - FONT AWESOME - - - - - - - - - -  -->
+
+    <script src="https://kit.fontawesome.com/cbd5f1e9d0.js" crossorigin="anonymous"></script>
+
+    <!-- LINKS A CSSs -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-calculator.css">
+
+    <link rel="icon" href="img/Crop_logo.svg">
+
+    <title>F18 UPC</title>
 </head>
 <body>
 
@@ -46,8 +73,27 @@
     </section>
 
     <section class="calculator">
-        <div class="separator separator-calculator"></div>
+        <div class="separator separator-calculator">
+            <p class="instructions">HELP</p>
+        </div>
+        <div class="help">
+
+            <div class="calculator-text-container"></div>
+
+            <div class="calculator-grab-button-container">
+                <i onclick="openHelp()" class="fa-solid fa-bars button-help"></i>
+            </div>
+            
+        </div>
+        <div class="separator-line"></div>
     </section>
+
+
+
+
+
+
     <script src="script.js"></script>
+    <script src="loadCalculator.js"></script>
 </body>
 </html>
