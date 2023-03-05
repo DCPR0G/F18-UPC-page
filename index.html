@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- LINKS A GOOGLE FONTS  PARA LA CALCULADORA -->
+    <!-- LINKS A GOOGLE FONTS PARA LA CALCULADORA -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +22,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <!-- LINKS A GOOGLE FONTS PARA LA PÁGINA -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
     <!-- - - - - - - - - - - FONT AWESOME - - - - - - - - - -  -->
 
@@ -45,7 +51,7 @@
 
         <nav>
             <a class="nav-button" href="#">Inicio</a>
-            <a class="nav-button" href="#">Demo</a>
+            <a class="nav-button" href="#sectionCalculator">Demo</a>
             <a class="nav-button" href="#">Mas Info</a>
             <a class="nav-button" href="#">Contacto</a>
         </nav>
@@ -64,27 +70,120 @@
 
         <div class="welcome-text-container">
             <h1>F-18 UPC</h1>
-            <p>Una calculadora de números reales basada en el UPC panel de un F-18C, básica, pero fascinante</p>
+            <p>Una calculadora de números reales basada en el
+                UPC panel de un F-18C, básica, pero fascinante.</p>
             <div class="welcome-button-container">
-                <button class="welcome-button">Probar</button>
-                <button class="welcome-button">Mas info</button>
+                <a href="#sectionCalculator" class="welcome-button">Probar</a>
+                <a href="#" class="welcome-button">Mas info</a>
             </div>
         </div>
     </section>
 
-    <section class="calculator">
+    <section id="sectionCalculator" class="calculator">
+
+        <div class="hereCalculator"></div>
+
+        <div class="div-text-up-sec2">
+            <h2 class="h2-up-sec2">Prueba</h2>
+            <p class="p-up-sec2">Una <b>versión virtual</b> de
+                                nuestro producto. Si tienes dudas
+                                acerca de como funciona, puedes
+                                consultar la ayuda.</p>
+        </div>
+        
         <div class="separator separator-calculator">
             <p class="instructions">HELP</p>
         </div>
         <div class="help">
 
-            <div class="calculator-text-container"></div>
+            <div class="calculator-text-container">
+                <div class="sag"></div>
+
+                <div class="paper-text-back"></div>
+
+                <div class="paper-text">
+
+
+
+                    <b class="user-manual">MANUAL DE USUARIO</b>
+                    <br>
+                    <p>Bienvenido al manual de usuario del UPC calculator
+                       panel. Antes de comenzar cabe aclarar que la
+                       calculadora ha sido intencionalmente reducida en sus
+                       capacidades, por ejemplo <b>no se admiten más de una
+                       operación a la vez</b>, la calculadora <b>no trabaja con
+                       números negativos</b> ni <b>decimales</b> y cuenta con una
+                       <b>limitada capacidad de dígitos</b> a introducir durante sus
+                       operaciones.
+                    </p>
+                    <br>
+
+                    <b>Índice:</b>
+                    <br>
+                    <p>*Puedes presionar sobre la sección subrayada que 
+                       necesites para ir de <b>manera rápida</b>*
+                    </p>
+                    <br>
+
+                    <b class="index-buttons">•Guía de botones</b>
+                    <b class="index-buttons">•Guía de botones</b>
+                    <b class="index-buttons">•Guía de botones</b>
+                    <b class="index-buttons">•Guía de botones</b>
+                    <b class="index-buttons">•Guía de botones</b>
+                    <b class="index-buttons">•Guía de botones</b>
+                    <br>
+
+
+                    <b class="button-guide">Guía de botones:</b>
+                    <br>
+
+
+
+
+
+                    <p><b class="main-panel">Panel principal</b>: Es el panel
+                       en dónde podrás introducir los números que desees calcular
+                       <i class="fa-solid fa-arrow-turn-down"></i>
+                    </p>
+                    <img src="img/imgHelp/mainPanel.png" class="imgHelp1">
+
+
+                    <p><b class="main-panel">DEL</b>: Es el botón que despejará de
+                        datos la pantalla principal
+                       <i class="fa-solid fa-arrow-turn-down"></i>
+                    </p>
+                    <img src="img/imgHelp/delButton.png" class="imgHelp2">
+                    
+
+                    <p><b class="main-panel">ENTER</b>: Al presionar este botón se
+                        calculará la operación actuál y enviará
+                        el resultado a la primer pantalla lateral
+                       <i class="fa-solid fa-arrow-turn-down"></i>
+                    </p>
+                    <img src="img/imgHelp/enterButton.png" class="imgHelp3">
+
+
+                    <p><b class="main-panel">Operadores</b>: Puedes presionar la operación que
+                        desees efectuar, suma, resta, división, multiplicación, poténcia o raíz.
+                        Una vez presionado, la operación se verá representada con su respectivo 
+                        simbolo en la pantalla principal
+                       <i class="fa-solid fa-arrow-turn-down"></i>
+                    </p>
+                    <img src="img/imgHelp/opPanel.png" class="imgHelp4">
+
+                </div>
+
+                <div class="sag"></div>
+            </div>
 
             <div class="calculator-grab-button-container">
-                <i onclick="openHelp()" class="fa-solid fa-bars button-help"></i>
+                <i class="fa-solid fa-bars button-help"></i>
             </div>
             
         </div>
+
+        <i class="fa-solid fa-angle-left"></i>
+
         <div class="separator-line"></div>
     </section>
 
@@ -94,6 +193,5 @@
 
 
     <script src="script.js"></script>
-    <script src="loadCalculator.js"></script>
 </body>
 </html>
