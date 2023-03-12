@@ -449,8 +449,7 @@ h1{
 
 .index-buttons{
     font-size: .8em;
-    text-decoration: underline;
-    cursor: pointer;
+    color: #000;
 }
 
 .user-manual{
@@ -471,33 +470,28 @@ h1{
     color: rgb(30, 30, 30);
 }
 
+.paper-text img{
+    margin: 10px 0 20px 0;
+    align-self: center;
+    justify-self: center;
+    filter: drop-shadow(5px 5px 2px #0000005e);
+}
 
 .imgHelp1{
     width: 100px;
-    align-self: center;
-    justify-self: center;
-    margin: 10px 0;
 }
 
 .imgHelp2{
     width: 40px;
-    align-self: center;
-    justify-self: center;
-    margin: 10px 0;
 }
 
 .imgHelp3{
     width: 80px;
-    align-self: center;
-    justify-self: center;
-    margin: 10px 0;
+
 }
 
 .imgHelp4{
-    width: 200px;
-    align-self: center;
-    justify-self: center;
-    margin: 10px 0;
+    width: 180px;
 }
 
 
